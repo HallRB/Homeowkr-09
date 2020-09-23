@@ -8,23 +8,43 @@ function promptUser() {
   return inquirer.prompt([
     {
       type: "input",
-      name: "name",
-      message: "What is your name?"
+      name: "repotitle",
+      message: "What is your Repository Name?"
     },
     {
       type: "input",
-      name: "location",
-      message: "Where are you from?"
+      name: "summary",
+      message: "What is a single sentance summary of your repo?"
     },
     {
       type: "input",
-      name: "hobby",
-      message: "What is your favorite hobby?"
+      name: "install",
+      message: "How do you install your repo?"
     },
     {
       type: "input",
-      name: "food",
-      message: "What is your favorite food?"
+      name: "description",
+      message: "Describe in greater detail what your repo does"
+    },
+    {
+      type: "input",
+      name: "faq1",
+      message: "Name one frequently asked question"
+    },
+    {
+      type: "input",
+      name: "faq2",
+      message: "Name a second frequently asked question"
+    },
+    {
+      type: "input",
+      name: "faq3",
+      message: "Name a third frequently asked question"
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "What is your email?"
     },
     {
       type: "input",
@@ -52,12 +72,25 @@ function generateHTML(answers) {
 <body>
   <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4">Hi! My name is ${answers.name}</h1>
-    <p class="lead">I am from ${answers.location}.</p>
-    <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
-    <ul class="list-group">
-      <li class="list-group-item">My GitHub username is ${answers.github}</li>
-      <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
+    <h1 class="display-4"> ${answers.repotitle}</h1>
+    <p class="lead">${answers.summary}.</p>
+    <h3>How to install</h3>
+       <ul class="list-group">
+    <li class="list-group-item">${answers.install}</li>
+    <h3>My Repo</h3>
+        <ul class="list-group">
+    <li class="list-group-item">${answers.description}</li>
+    <h3>Frequently Asked Questions</h3>
+        <ul class="list-group">
+    <li class="list-group-item">${answers.faq1}</li>
+    <li class="list-group-item">${answers.faq2}</li>
+    <li class="list-group-item">${answers.faq3}</li>
+    <h3>Contact Info</h3>
+        <ul class="list-group">
+    <li class="list-group-item">${answers.email}</li>
+    <li class="list-group-item">${answers.github}</li>
+    <li class="list-group-item">${answers.linkedin}</li>
+    <li class="list-group-item">
     </ul>
   </div>
 </div>
