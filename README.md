@@ -42,7 +42,6 @@
     <li class="list-group-item">Richardbrianhall@gmail.com</li>
     <li class="list-group-item">https://www.github.com/HallRB</li>
     <li class="list-group-item">https://www.linkedin.com/in/hallrb/</li>
-    <li class="list-group-item">
     </ul>
   </div>
 </div>
