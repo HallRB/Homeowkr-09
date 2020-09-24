@@ -18,13 +18,38 @@ function promptUser() {
     },
     {
       type: "input",
-      name: "install",
-      message: "How do you install your repo?"
+      name: "description",
+      message: "Insert full description of your repo here:"
     },
     {
       type: "input",
-      name: "description",
-      message: "Describe in greater detail what your repo does"
+      name: "TOC",
+      message: "Insert your table of contents for your repo here:"
+    },
+    {
+      type: "input",
+      name: "install",
+      message: "Insert full description of how to install your repo here:"
+    },
+    {
+      type: "input",
+      name: "Usage",
+      message: "Insert usage instructions here:"
+    },
+    {
+      type: "input",
+      name: "License",
+      message: "Insert licensing information here:"
+    },
+    {
+      type: "input",
+      name: "Contributing",
+      message: "Insert contributing instructions here:"
+    },
+    {
+      type: "input",
+      name: "Tests",
+      message: "Insert information on tests here:"
     },
     {
       type: "input",
@@ -34,12 +59,12 @@ function promptUser() {
     {
       type: "input",
       name: "faq2",
-      message: "Name a second frequently asked question"
+      message: "Name a second frequently asked question (skip if none)"
     },
     {
       type: "input",
       name: "faq3",
-      message: "Name a third frequently asked question"
+      message: "Name a third frequently asked question (skip if none)"
     },
     {
       type: "input",
@@ -74,12 +99,27 @@ function generateHTML(answers) {
   <div class="container">
     <h1 class="display-4"> ${answers.repotitle}</h1>
     <p class="lead">${answers.summary}.</p>
-    <h3>How to install</h3>
-       <ul class="list-group">
-    <li class="list-group-item">${answers.install}</li>
-    <h3>My Repo</h3>
+    <h3>Description</h3>
         <ul class="list-group">
     <li class="list-group-item">${answers.description}</li>
+    <h3>Table of Contents</h3>
+       <ul class="list-group">
+    <li class="list-group-item">${answers.TOC}</li>
+    <h3>Installation</h3>
+       <ul class="list-group">
+    <li class="list-group-item">${answers.install}</li>
+    <h3>Usage</h3>
+    <ul class="list-group">
+    <li class="list-group-item">${answers.Usage}</li>
+    <h3>License</h3>
+    <ul class="list-group">
+    <li class="list-group-item">${answers.License}</li>
+    <h3>Contributing</h3>
+    <ul class="list-group">
+    <li class="list-group-item">${answers.Contributing}</li>
+    <h3>Tests</h3>
+    <ul class="list-group">
+    <li class="list-group-item">${answers.Usage}</li>
     <h3>Frequently Asked Questions</h3>
         <ul class="list-group">
     <li class="list-group-item">${answers.faq1}</li>
