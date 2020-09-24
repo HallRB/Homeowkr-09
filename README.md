@@ -34,7 +34,7 @@
     <h3>Contributing</h3>
     <ul class="list-group">
     <li class="list-group-item">Richard B. Hall</li>
-    <h3><img src="test1.JPG"></h3>
+      <h3>Test </br> <img src="test1.JPG"></h3>
     <ul class="list-group">
     <li class="list-group-item">skip</li>
     <h3>Contact Info</h3>
