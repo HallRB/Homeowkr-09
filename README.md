@@ -28,7 +28,7 @@
     <li class="list-group-item">While the terminal is open and you are in the same folder you installed the npm in, type "node index" and the prompt will run.  Answer the questions and fill out the descriptions as fully as you can.  At the end a file "index.html" will be generated.  Run that file in the browser to see the end result of your product.  If you have more information to add, append the index.html file within the index.html file or delete the index.html file and begin again</li>
     <h3>License</h3>
     <ul class="list-group">
-    <li class="list-group-item"></li>
+      <li class="list-group-item">MIT License </br> https://github.com/twbs/bootstrap/blob/v4.0.0/LICENSE</li>
     <h3>Contributing</h3>
     <ul class="list-group">
     <li class="list-group-item">Richard B. Hall</li>
